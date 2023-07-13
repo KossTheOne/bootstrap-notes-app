@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: rgb(233, 247, 247);
+}
+
+h1 {
+  margin-top: 0;
+}
+
+form {
+  margin-bottom: 16px;
+}
+
+button {
+  margin-top: 8px;
+}
+
+.paper {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  position: relative;
+  overflow-wrap: break-word;
+}
+
+.hoveredButton {
+  height: 0;
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.any {
+  transition: 0.4s;
+}
+
+.any:hover {
+  .hoveredButton {
+    height: auto;
+    opacity: 1;
+  }
+}
+
+
+@media (max-width: 599px) {
+  .button {
+    display: block;
+    margin-top: 8px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 959px) {
+  .form {
+    margin-bottom: 16px;
+  }
+}
